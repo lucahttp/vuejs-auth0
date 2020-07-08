@@ -16,6 +16,8 @@ sudo npm run serve-vue --fix
 ```bash
 npm install -g @vue/cli-service-global
 npm install eslint
+npm install eslint-plugin-vue -u
+
 npm install && npm run serve-vue
 ```
 

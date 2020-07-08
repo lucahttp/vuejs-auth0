@@ -8,6 +8,17 @@ For this scenario, an API endpoint `/api/external` has been included in the Expr
 npm install
 ```
 
+
+      //"no-console": ["error",{"allow": ["error","warn"]}],
+      
+sudo npm run serve-vue --fix
+
+```bash
+npm install -g @vue/cli-service-global
+npm install eslint
+npm install && npm run serve-vue
+```
+
 ### Configuration
 
 The project needs to be configured with your Auth0 domain and client ID in order for the authentication flow to work.

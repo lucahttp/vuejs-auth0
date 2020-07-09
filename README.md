@@ -7,16 +7,16 @@ For this scenario, an API endpoint `/api/external` has been included in the Expr
 ```bash
 npm install
 ```
-
+npm audit fix --force
 
       //"no-console": ["error",{"allow": ["error","warn"]}],
       
 sudo npm run serve-vue --fix
 
 ```bash
-npm install -g @vue/cli-service-global
-npm install eslint
-npm install eslint-plugin-vue -u
+
+
+
 
 npm install && npm run serve-vue
 ```

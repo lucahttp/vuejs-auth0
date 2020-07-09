@@ -31,7 +31,31 @@ export default {
     };
   },
   methods: {
-    
+    async callApi() {
+      //const accessToken = await this.$auth.getTokenSilently();
+      //console.log(accessToken);
+
+      var axios = require('axios');
+
+      var config = {
+        method: 'get',
+        url: 'https://api.ipify.org',
+        headers: { }
+      };
+
+      axios(config)
+      .then(function (response) {
+        //console.log(JSON.stringify(response.data));
+        this.apiMessage = JSON.stringify(response.data);
+
+      })
+      .catch(function (error) {
+        //console.log(error);
+        this.apiMessage = error;
+      });
+
+    }
+    /*
     async callApi() {
       const accessToken = await this.$auth.getTokenSilently();
       console.log(accessToken);
@@ -49,10 +73,11 @@ export default {
         this.apiMessage = `Error: the server responded with '${e.response.status}: ${e.response.statusText}'`;
       }
     }
+*/
   }
 };
 
-    /*
+/*
     async callApi() {
       const accessToken = await this.$auth.getTokenSilently();
       console.log(accessToken);
@@ -73,7 +98,7 @@ export default {
   }
 };
     */
- /*
+/*
     async callApi() {
       //const accessToken = await this.$auth.getTokenSilently();
       //console.log(accessToken);
